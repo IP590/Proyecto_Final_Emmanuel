@@ -26,6 +26,7 @@ void setup() {
   digitalWrite(pinEmmanuelB, HIGH);
   digitalWrite(pinSenalIzquierda, LOW);
   digitalWrite(pinSenalDerecha, LOW);
+  delay(duracionRojo);
 }
 
 void loop() {
@@ -41,14 +42,8 @@ void loop() {
   digitalWrite(pinEmmanuelB, LOW);
   digitalWrite(pinSenalIzquierda, LOW);
   digitalWrite(pinSenalDerecha, HIGH);
-  delay(duracionVerde);
-
-  // Muestra luces amarillas en ambos Emmanuel y apaga la señal direccional izquierda
-  digitalWrite(pinEmmanuelA, LOW);
-  digitalWrite(pinEmmanuelB, LOW);
-  digitalWrite(pinSenalIzquierda, LOW);
-  digitalWrite(pinSenalDerecha, LOW)l;
   delay(duracionRojo);
+
 }
 
 //Gracias por todo Emmanuel
