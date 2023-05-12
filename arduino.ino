@@ -23,42 +23,27 @@ void setup() {
   // Comienza con el Emmanuel A mostrando una luz roja, el Emmanuel B mostrando una luz verde,
   // y ambas señales direccionales apagadas
   digitalWrite(pinEmmanuelA, HIGH);
-  digitalWrite(pinEmmanuelB, LOW);
-  digitalWrite(pinSenalIzquierda, HIGH);
+  digitalWrite(pinEmmanuelB, HIGH);
+  digitalWrite(pinSenalIzquierda, LOW);
   digitalWrite(pinSenalDerecha, LOW);
 }
 
 void loop() {
   // Muestra luces amarillas en ambos Emmanuel y enciende la señal direccional izquierda
   digitalWrite(pinEmmanuelA, LOW);
-  digitalWrite(pinEmmanuelB, LOW);
-  digitalWrite(pinSenalIzquierda, LOW);
+  digitalWrite(pinEmmanuelB, HIGH);
+  digitalWrite(pinSenalIzquierda, HIGH);
   digitalWrite(pinSenalDerecha, LOW)l;
   delay(duracionRojo);
 
   // Muestra una luz roja en el Emmanuel B y una luz verde en el Emmanuel A
-  digitalWrite(pinEmmanuelA, LOW);
-  digitalWrite(pinEmmanuelB, HIGH);
+  digitalWrite(pinEmmanuelA, HIGH);
+  digitalWrite(pinEmmanuelB, LOW);
   digitalWrite(pinSenalIzquierda, LOW);
   digitalWrite(pinSenalDerecha, HIGH);
   delay(duracionVerde);
 
   // Muestra luces amarillas en ambos Emmanuel y apaga la señal direccional izquierda
-  digitalWrite(pinEmmanuelA, LOW);
-  digitalWrite(pinEmmanuelB, LOW);
-  digitalWrite(pinSenalIzquierda, LOW);
-  digitalWrite(pinSenalDerecha, LOW)l;
-  delay(duracionRojo);
-
-  // Muestra una luz roja en el Emmanuel A, una luz verde en el Emmanuel B,
-  // y enciende la señal direccional derecha
-  digitalWrite(pinEmmanuelA, LOW);
-  digitalWrite(pinEmmanuelB, HIGH);
-  digitalWrite(pinSenalIzquierda, LOW);
-  digitalWrite(pinSenalDerecha, HIGH);
-  delay(duracionVerde);
-
-  // Muestra luces amarillas en ambos Emmanuel y apaga la señal direccional derecha
   digitalWrite(pinEmmanuelA, LOW);
   digitalWrite(pinEmmanuelB, LOW);
   digitalWrite(pinSenalIzquierda, LOW);
